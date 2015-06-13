@@ -3,11 +3,6 @@ import pandas as pd
 
 from create_csv import save_to_csv # make sure the file exist in the same folder.
 
-# Govt firewall blocks this API calling. Non-govt wifi is needed.
-# I have no gotten the access key as well.
-# Need to include reading json files. Either converting from string to json, or something.
-# I need it to be in dataframe formats preferrably, so that I can read it into a csv
-
 # Access the file
 root_folder = os.path.dirname(os.path.realpath(__file__))
 data = pd.read_csv(root_folder + "/unmatched postal codes.txt",
